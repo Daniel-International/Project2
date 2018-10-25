@@ -1,1 +1,1 @@
-# Test bench file for project 2
+// Test bench file for project 2
