@@ -32,7 +32,7 @@ module decoder(G, C, B, A, decoder_out);
 endmodule
 
 //================== Combinational Circuit ==================
-module comb_circuit(x, y, z, F1, F2, F3)
+module comb_circuit(x, y, z, F1, F2, F3);
 	input x, y, z;
 	output [7:0] F1, F2, F3;	// 3, 8 bit outputs
 
