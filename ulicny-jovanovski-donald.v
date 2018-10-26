@@ -7,7 +7,7 @@
 
 //==================== 3 to 8 bit decoder ====================
 module decoder(G, C, B, A, decoder_out);
-	input A, B, C, G;	// individual bit inputs
+	input A, B, C, G;	// individual bit inputs (G not used by circuit)
 	output [7:0] decoder_out;	// 8-bit output
 	always @(G, A, B, C) 		//re-evaluate if these change
 		begin 
