@@ -18,5 +18,10 @@ module combinational_circuit_tb();
     end
 
     combinational_circuit comb1(x, y, z, F1, F2, F3);
+        input x,y,z;
+        output F1,F2,F3;
+    xor(F1, (x & z), (~x & ~y & ~z));
+    xor(F2, (~x & y), (x & ~y & ~z));
+    xor(F3, (x & y), (~x & ~y & ~z));
 
 endmodule
