@@ -2,7 +2,7 @@
 // Michael Ulicny, Filip Jovanovski, Christopher Donald
 module combinational_circuit_tb();
     reg x, y, z, g;    //three inputs to combinational circuit
-    wire F1, F2, F3 //three outputs from combinational circuit
+    wire F1, F2, F3; //three outputs from combinational circuit
     initial begin
         //test data
         g = 0;
