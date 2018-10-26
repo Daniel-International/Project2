@@ -36,9 +36,9 @@ module comb_circuit(x, y, z, F1, F2, F3);
 	input x, y, z;
 	output [7:0] F1, F2, F3;	// 3, 8 bit outputs
 
-	//F1 = TODO
-	//F2 = TODO
-	//F3 = TODO
+	assign F1 = (x & z) | (~x & ~y & ~z);	//F1 = TODO
+	assign F2 = (~x & y) | (x & ~y & ~z);	//F2 = TODO
+	assign F3 = (x & y) | (~x & ~y & ~z);	//F3 = TODO
 
 
 
